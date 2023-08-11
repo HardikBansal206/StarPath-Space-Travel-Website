@@ -79,3 +79,7 @@ function toggleDrawer() {
   navbarLinks.classList.toggle('active')  
   sideDrawer.style.display = sideDrawer.style.display == "block" ? "none" : "block";
 }
+
+// home page scroll fix
+const startVideo = document.getElementById("startVideo")
+startVideo.style.width = window.screen.width+"px"
