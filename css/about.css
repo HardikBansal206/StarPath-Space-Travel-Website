@@ -1,21 +1,164 @@
 /*Contains CSS for About page unique elements*/
 
 /*CSS for text*/
-.about-text{
+#about-text{
     margin-top: 100px;
     margin-bottom: 100px;
+    width: 60vw;
+    margin-left: 20vw;
 }
 
-.about-text h1{
-    color: #55CBCD;
+#about-text h1{
+    color: white;
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.about-text p{
+.description-text{
     margin-top: 10px;
     font-size: 20px;
-    color: #9AB7D3;
+    font-weight: 100;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
+
+.subheading{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/*timeline css*/
+.timeline {
+    position: relative;
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+  
+  /*the vertical ruler*/
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 30vw;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: url("https://www.freepik.com/icon/worldwide_814587#fromView=keyword&term=Planet&page=1&position=1");
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #85abec;
+    top: 32px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: -8%;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  /* Arrows to the left container*/
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 40px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Arrows to the right container*/
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 40px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Circle for the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+  }
+  .timeline-heading{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+  img{
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .timeline::after {
+      left: 31px;
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+      left: 15px;
+    }
+
+    .right {
+      left: 0%;
+    }
+    .left {
+        left: 0%;
+    }
+  }
