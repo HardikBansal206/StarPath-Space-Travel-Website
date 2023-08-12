@@ -494,6 +494,18 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
+#thank-popup-content p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 2vw;
+    width: 60%;
+    text-align: center;
+}
+
 #thank-loop{
     height: 20vh;
     width: 20vh;
