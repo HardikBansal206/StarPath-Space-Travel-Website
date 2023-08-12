@@ -82,4 +82,4 @@ function toggleDrawer() {
 
 // home page scroll fix
 const startVideo = document.getElementById("startVideo")
-startVideo.style.width = document.documentElement.clientWidth+"px"
+startVideo.style.width = document.documentElement.clientWidth + "px"

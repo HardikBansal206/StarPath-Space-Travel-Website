@@ -29,8 +29,7 @@
 /*for the background video */
 #startVideo{
     margin-top: 0px;
-    width: 100%;
-    height: auto;
+    width: 100vw;
     z-index: 1;
 }
 
