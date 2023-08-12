@@ -85,3 +85,5 @@ window.onresize = function() {
   const startVideo = document.getElementById("startVideo")
   startVideo.style.width = document.documentElement.clientWidth + "px"
 };
+const startVideo = document.getElementById("startVideo")
+startVideo.style.width = document.documentElement.clientWidth + "px"
