@@ -11,6 +11,10 @@ This was made to learn and practice our skills in HTML, CSS and JS.
 https://github.com/HardikBansal206/IEEE-TEMS-Team-8-Travel-Website-/assets/62472697/5915c09e-bbfa-4875-979a-47ebaa8e2d3a
 
 
+## Try it here
+https://starpath.netlify.app/
+
+
 ## Contributors
 This website has been made with the contributions of 
 - Tarush Agarwal (22BBS0201) (@tarush10000)
