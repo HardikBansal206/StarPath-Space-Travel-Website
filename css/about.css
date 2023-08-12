@@ -134,6 +134,11 @@
   
   @media screen and (max-width: 600px) {
 
+    #about-text{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
     .timeline::after {
       left: 31px;
     }
