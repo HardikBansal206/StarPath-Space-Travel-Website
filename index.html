@@ -244,13 +244,20 @@
                         </tr>
                       </table>
                     </div>
-                    <button id = "search-button" onclick="openloading()">Explore Now</button>
+                    <button id = "search-button" onclick="openloading();">Explore Now</button>
                 </div>
             </section>
           </section>
         </section>
       </section>
     </section>
+
+    <section id = "loading">
+      <div id = "loader">
+        <dotlottie-player src="https://lottie.host/7bd0512b-e4d6-4138-9c9c-29755e011302/KjQN4EYFAB.lottie"  background="transparent"  speed="1" loop autoplay id = "loop"></dotlottie-player>
+      </div>
+    </section>
+
     <section id = "loading-popup">
       <div id = "loading-popup-content">
         <dotlottie-player src="https://lottie.host/64932708-37eb-4026-af76-0f9685c79755/1XVe1sHIez.lottie"  background="transparent"  speed="1" id = "loading-loop" loop autoplay></dotlottie-player>
@@ -275,6 +282,13 @@
         </div>
     </footer>
     <div id="copyright"><p>Copyright © 2069 Space Travel Adventures. All rights reserved.</p></div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script>
+      var loading = document.getElementById("loading");
+      window.addEventListener("load", function(){
+        loading.style.display = "none";
+      })
+    </script>
     <script src="js/index.js" async></script>
     <script src="js/default.js" async></script>
     <script src="js/default.js"></script>
