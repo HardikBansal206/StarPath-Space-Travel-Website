@@ -8,7 +8,6 @@ toggleButton.addEventListener('click',toggleDrawer)
 toggleButton2.addEventListener('click',toggleDrawer)
 
 function toggleDrawer() {
-  navbarLinks2.classList.toggle('active')  
-  navbarLinks.classList.toggle('active')  
+  navbarLinks2.classList.toggle('active')
   sideDrawer.style.display = sideDrawer.style.display == "block" ? "none" : "block";
 }

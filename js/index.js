@@ -75,11 +75,14 @@ toggleButton.addEventListener('click',toggleDrawer)
 toggleButton2.addEventListener('click',toggleDrawer)
 
 function toggleDrawer() {
-  navbarLinks2.classList.toggle('active')  
-  navbarLinks.classList.toggle('active')  
+  navbarLinks2.classList.toggle('active')
   sideDrawer.style.display = sideDrawer.style.display == "block" ? "none" : "block";
 }
 
 // home page scroll fix
+window.onresize = function() {
+  const startVideo = document.getElementById("startVideo")
+  startVideo.style.width = document.documentElement.clientWidth + "px"
+};
 const startVideo = document.getElementById("startVideo")
 startVideo.style.width = document.documentElement.clientWidth + "px"
