@@ -130,12 +130,25 @@
     padding-bottom: 3%;
 }
 
+#top-destination-roller{
+    display: flex;
+    flex-direction: row;
+}
 /* CSS for Top-Destinations */
+
+.pre-btn,
+.nxt-btn {
+    width: 3%;
+    height: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: 0.5s;
+    margin-top: 0.8%;
+}
+
 .video-card-container {
-    position: relative;
     width: 92%;
-    padding-left: 10px;
-    margin: 0 auto;
     height: 10vw;
     display: flex;
     margin-bottom: 20px;
@@ -146,10 +159,6 @@
     scroll-behavior: smooth;
 }
 
-.video-card-container::-webkit-scrollbar {
-    display: none;
-}
- 
 .video-card {
     position: relative;
     min-width: calc(100% / 5 - 10px);
@@ -180,29 +189,17 @@
     width: 100%;
     height: auto;
 }
-.pre-btn,
-.nxt-btn {
-    position: absolute;
-    top: 50%;
-    width: 3%;
-    height: 100px;
-    z-index: 2;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: 0.5s;
-    margin-top: 0.8%;
-}
   
 .pre-btn {
     background-color: #000000;
     margin-left: 0.5%;
+    margin-right: 0.5%;
 }
   
 .nxt-btn {
-    right: 0;
     background-color: #000000;
-    margin-right: 0.6%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 }
 
 .pre-btn:hover, .nxt-btn:hover {

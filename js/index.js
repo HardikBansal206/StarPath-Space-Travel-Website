@@ -6,6 +6,8 @@ const videoCards = [...document.querySelectorAll(".video-card")];
 videoCards.forEach((item) => {
   item.addEventListener("mouseover", () => {
     let video = item.children[1];
+    video.pause();
+    video.currentTime = 0;
     video.play();
   });
   item.addEventListener("mouseleave", () => {
@@ -16,21 +18,20 @@ videoCards.forEach((item) => {
 
 //card sliders
 
-var videocardContainers = [...document.querySelectorAll(".video-card-container")];
-var preBtns = [...document.querySelectorAll(".pre-btn")];
-var nxtBtns = [...document.querySelectorAll(".nxt-btn")];
+var videocardContainer = document.querySelector(".video-card-container");
+var preBtn = document.querySelector(".pre-btn");
+var nxtBtn = document.querySelector(".nxt-btn");
+var videocard = document.querySelector(".video-card");
 
-videocardContainers.forEach((item, i) => {
-  var containerDimensions = item.getBoundingClientRect();
-  var containerWidth = containerDimensions.width;
+var containerDimensions = videocard.getBoundingClientRect();
+var containerWidth = containerDimensions.width;
 
-  nxtBtns[i].addEventListener("click", () => {
-    item.scrollLeft += containerWidth - 10;
-  });
+nxtBtn.addEventListener("click", () => {
+  videocardContainer.scrollLeft += containerWidth + 1400;
+});
 
-  preBtns[i].addEventListener("click", () => {
-    item.scrollLeft -= containerWidth + 10;
-  });
+preBtn.addEventListener("click", () => {
+  videocardContainer.scrollLeft -= containerWidth + 1400;
 });
 
 
