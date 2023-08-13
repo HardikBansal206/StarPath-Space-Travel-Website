@@ -26,15 +26,17 @@ var videocard = document.querySelector(".video-card");
 var containerDimensions = videocardContainer.getBoundingClientRect();
 var containerWidth = containerDimensions.width;
 
-
+window.onresize = function() {
+  clientWidth = document.documentElement.clientWidth
+};
+var clientWidth = document.documentElement.clientWidth
 
 nxtBtn.addEventListener("click", () => {
-  videocardContainer.scrollLeft += window.screen.width + 1400;
-  
+  videocardContainer.scrollLeft += clientWidth*0.8
 });
 
 preBtn.addEventListener("click", () => {
-  videocardContainer.scrollLeft -= containerWidth + 1400;
+  videocardContainer.scrollLeft -= clientWidth*0.8
 });
 
 
