@@ -283,6 +283,7 @@ body{
     .video-card-container{
         width: 100%;
         height: auto;
+        
     }
 
     .video-card{
@@ -296,5 +297,13 @@ body{
         width: 100%;
         height: auto;
     }
+    .pre-btn,.nxt-btn{
+        position: relative;
+        top: 60px;
+    }
+    #top-destination-roller{
+        overflow-x: hidden;
+    }
+    
 
 }

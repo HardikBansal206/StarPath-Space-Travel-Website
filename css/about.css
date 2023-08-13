@@ -174,4 +174,8 @@
     .left {
         left: 0%;
     }
+
+    #about-timeline{
+      width: 95%;
+    }
   }
