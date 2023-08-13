@@ -23,11 +23,14 @@ var preBtn = document.querySelector(".pre-btn");
 var nxtBtn = document.querySelector(".nxt-btn");
 var videocard = document.querySelector(".video-card");
 
-var containerDimensions = videocard.getBoundingClientRect();
+var containerDimensions = videocardContainer.getBoundingClientRect();
 var containerWidth = containerDimensions.width;
 
+
+
 nxtBtn.addEventListener("click", () => {
-  videocardContainer.scrollLeft += containerWidth + 1400;
+  videocardContainer.scrollLeft += window.screen.width + 1400;
+  
 });
 
 preBtn.addEventListener("click", () => {
@@ -35,7 +38,7 @@ preBtn.addEventListener("click", () => {
 });
 
 
-
+console.log(document.documentElement.clientWidth);
 var tryNowButton = document.getElementById("try-now-button");
 const popup = document.getElementById("popup");
 const backdrop = document.getElementById("content");

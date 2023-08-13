@@ -9,7 +9,9 @@
 }
 
 /*Contains CSS for Home page unique elements*/
-
+body{
+    overflow-x: hidden;
+}
 #content{
     width: 100%;
 }
@@ -157,6 +159,7 @@
     overflow-x: auto;
     overflow-y: visible;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .video-card {
@@ -168,6 +171,10 @@
     overflow: hidden;
     margin-right: 10px;
     transition: 0.5s;
+}
+
+.video-card-container::-webkit-scrollbar {
+    display: none;
 }
 
 .video-card-image,
