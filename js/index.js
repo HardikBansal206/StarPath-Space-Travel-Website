@@ -32,11 +32,11 @@ window.onresize = function() {
 var clientWidth = document.documentElement.clientWidth
 
 nxtBtn.addEventListener("click", () => {
-  videocardContainer.scrollLeft += clientWidth*0.8
+  videocardContainer.scrollLeft += clientWidth*0.81
 });
 
 preBtn.addEventListener("click", () => {
-  videocardContainer.scrollLeft -= clientWidth*0.8
+  videocardContainer.scrollLeft -= clientWidth*0.81
 });
 
 
